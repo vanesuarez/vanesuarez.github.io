@@ -1,15 +1,32 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Vanesa Suarez Portfolio</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Raleway"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <link rel="stylesheet" href="styles.css" />
+<head>
+  <title>Vanesa Suarez Portfolio</title>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="normalize.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <nav> 
+
+  <div id="navegador">
+    <ul>
+      <li><a id="ed" href="#navEd"> Educacion </a></li>
+      <li><a id="exp" href="#navExp"> Experiencia </a></li>
+      <li><a id="hab" href="#navHab"> Habilidades </a></li>
+      <li><a id="cont" href="#navCont"> Contacto </a></li>
+    </ul>
+  </div>
+
+</nav>
+
+  <div class="conteiner">
 
     <div>
       <img class="profile-pic" src="./img/foto.jpg" alt="Foto de perfil" />
@@ -29,15 +46,6 @@
     </p>
 
     <div class="divider"></div>
-
-    <section>
-      <div class="buttons">
-        <a id="ed" href="#navEd"> Educacion </a>
-        <a id="exp" href="#navExp"> Experiencia </a>
-        <a id="hab" href="#navHab"> Habilidades </a>
-        <a id="cont" href="#navCont"> Contacto </a>
-      </div>
-    </section>
 
     <!-- EDUCACION -->
     <h2 id="navEd">Educación</h2>
@@ -78,10 +86,10 @@
     <!-- HABILIDADES -->
     <h2 id="navHab">Habilidades</h2>
 
-    <img id="habilitiesimg" src="./img/habilidades.png" alt="habilidades" />
-    <img id="habilitiesimg2" src="./img/habilidades2.jpg" alt="habilidades2" />
+    <div class="habsection">
 
-    <div class="tablehab">
+      <img id="habilitiesimg" src="./img/habilidades.png" alt="habilidades" />
+
       <table>
         <tr>
           <td>MS Office365</td>
@@ -112,59 +120,35 @@
 
         <form action="" method="get">
           <p>
-            <label for="nombre" class="colocar_nombre"
-              >Nombre
+            <label for="nombre" class="colocar_nombre">Nombre
               <span class="obligatorio">*</span>
             </label>
-            <input
-              type="text"
-              name="introducir_nombre"
-              id="nombre"
-              required="obligatorio"
-              placeholder="Escribe tu nombre"
-            />
+            <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
+              placeholder="Escribe tu nombre" />
           </p>
 
           <p>
-            <label for="email" class="colocar_email"
-              >Email
+            <label for="email" class="colocar_email">Email
               <span class="obligatorio">*</span>
             </label>
-            <input
-              type="email"
-              name="introducir_email"
-              id="email"
-              required="obligatorio"
-              placeholder="Escribe tu Email"
-            />
+            <input type="email" name="introducir_email" id="email" required="obligatorio"
+              placeholder="Escribe tu Email" />
           </p>
 
           <p>
-            <label for="asunto" class="colocar_asunto"
-              >Asunto
+            <label for="asunto" class="colocar_asunto">Asunto
               <span class="obligatorio">*</span>
             </label>
-            <input
-              type="text"
-              name="introducir_asunto"
-              id="assunto"
-              required="obligatorio"
-              placeholder="Escribe un asunto"
-            />
+            <input type="text" name="introducir_asunto" id="assunto" required="obligatorio"
+              placeholder="Escribe un asunto" />
           </p>
 
           <p>
-            <label for="mensaje" class="colocar_mensaje"
-              >Mensaje
+            <label for="mensaje" class="colocar_mensaje">Mensaje
               <span class="obligatorio">*</span>
             </label>
-            <textarea
-              name="introducir_mensaje"
-              class="texto_mensaje"
-              id="mensaje"
-              required="obligatorio"
-              placeholder="Deja aquí tu comentario..."
-            ></textarea>
+            <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
+              placeholder="Deja aquí tu comentario..."></textarea>
           </p>
 
           <button type="submit" name="enviar_formulario" id="enviar">
@@ -178,21 +162,24 @@
       </div>
     </div>
 
-    <footer>
-      <div class="footer-container">
-        <div class="social-icons">
-          <a href="https://www.linkedin.com/in/vanesa-suarez/" target="_blank"
-            ><img src="./img/icons8-linkedin-50.png" alt="Linkedin"
-          /></a>
-          <a href="https://www.instagram.com/vaneesuarez/" target="_blank"
-            ><img src="./img/icons8-instagram-50.png" alt="Instagram"
-          /></a>
-          <a href="https://github.com/VaneUY" target="_blank"
-            ><img src="./img/icons8-github-50.png" alt="Github"
-          /></a>
-        </div>
-        <p>Vanesa Suarez &copy; 2023</p>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/vanesa-suarez/" target="_blank"><img src="./img/icons8-linkedin-50.png"
+            alt="Linkedin" /></a>
+        <a href="https://www.instagram.com/vaneesuarez/" target="_blank"><img src="./img/icons8-instagram-50.png"
+            alt="Instagram" /></a>
+        <a href="https://github.com/VaneUY" target="_blank"><img src="./img/icons8-github-50.png" alt="Github" /></a>
       </div>
-    </footer>
-  </body>
+      <p>Vanesa Suarez &copy; 2023</p>
+    </div>
+  </footer>
+
+
+
+
+</body>
+
 </html>
