@@ -45,17 +45,6 @@ h1 {
   width: 100%;
 }
 
-section {
-  background-image: url(./img/backgroundtech.png);
-  background-position: 0;
-  background-size: cover;
-  display: grid;
-  width: 100%;
-  max-width: 1200px;
-  margin: 10px auto;
-  box-shadow: 6px 6px 1px 1px rgba(0, 0, 0, 0.2);
-  box-sizing: border-box;
-}
 
 /* EDUCACION, EXPERIENCIA Y HABILIDADES */
 
@@ -96,6 +85,14 @@ h2 {
   padding-left: 30px;
 }
 
+table {
+
+  height: auto;
+  width: 20%;
+  border-collapse: separate;
+  border-spacing: 10px;
+}
+
 td {
   text-align: center;
   background: #f7f5f5;
@@ -105,14 +102,6 @@ td {
   border-right: 8px solid #0d00ff;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
-}
-
-table {
-
-  height: auto;
-  width: 20%;
-  border-collapse: separate;
-  border-spacing: 10px;
 }
 
 /* FORMULARIO CONTACTO */
